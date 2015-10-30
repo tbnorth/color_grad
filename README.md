@@ -36,7 +36,7 @@ cg = ColorGrad.from_ascii_ppm("gradient/ylw2brn.ppm")
 cg.set_min_max(0, MAX)
 alpha = 0
 steps = 100
-for step in range(steps):
+for step in range(steps+1):
     pos = float(step) / steps * MAX
     rgb = cg.rgb_int(pos)
     print pos, rgb[0], rgb[1], rgb[2], alpha
