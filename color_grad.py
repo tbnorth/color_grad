@@ -1,5 +1,8 @@
-"""Interpolate colours in colour gradients"""
+"""
+color_grad.py - Interpolate colours in colour gradients
 
+Terry Brown, Terry_N_Brown@yahoo.com, Fri Oct 30 09:23:13 2015
+"""
 class ColorGrad(object):
 
     def __init__(self):
