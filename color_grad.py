@@ -35,7 +35,10 @@ class ColorGrad(object):
             self.colors.append((r,g,b))
 
         return self
-    def get_pos(self, x):    
+    def get_pos(self, x):
+
+        if not self.range:
+            return 0.
 
         pos = (float(x) - self.min) / self.range
 
